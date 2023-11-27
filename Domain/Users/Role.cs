@@ -1,7 +1,7 @@
 ﻿namespace Domain.Users;
 
-public sealed class Role
+public sealed class Role(string name)
 {
-    public int Id { get; }
-    public string Name { get; private set; } = null!;
+    public int Id { get; private set; } = default;
+    public string Name { get; private set; } = name;
 }
