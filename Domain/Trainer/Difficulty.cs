@@ -1,7 +1,7 @@
 ﻿namespace Domain.Trainer;
 
-public sealed class Difficulty
+public sealed class Difficulty(string name)
 {
-    public int Id { get; private set; }
-    public string Name { get; private set; } = null!;
+    public int Id { get; private set; } = default;
+    public string Name { get; private set; } = name;
 }
